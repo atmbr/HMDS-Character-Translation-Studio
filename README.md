@@ -1,6 +1,7 @@
 # HMDS Character Translation Studio
-<img width="80" height="80" alt="app_icon" src="https://github.com/user-attachments/assets/aa2e366e-8acd-40cb-bff0-1e35e8c49c1c" /> 
-
+<p align="center">
+<img width="100" alt="app_icon" src="https://github.com/user-attachments/assets/aa2e366e-8acd-40cb-bff0-1e35e8c49c1c" /> 
+</p>
 Uma ferramenta feita para quem quer **traduzir Harvest Moon DS sem precisar viver no hexadecimal**.
 
 Ela nasceu durante a tradução PT-BR do jogo. Enquanto a tradução avançava, muita coisa que normalmente seria feita na mão acabou sendo mapeada: `ScriptS`, strings, ponteiros, controles, Face IDs, expressões, preview de diálogo e várias diferenças entre ROMs antigas. O Character Translation Studio junta esse conhecimento numa interface pensada para o tradutor.
