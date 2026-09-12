@@ -1,0 +1,35 @@
+HMDS Character Translation Studio v0.10.0 - Validation
+Date: 2026-09-12
+
+Static checks
+- Python module compilation: PASS
+- Public unit tests: 7/7 PASS
+- Tk UI startup under virtual display: PASS
+- Export menu reduced to current dialogue / full character / CSV / Import: PASS
+
+Integration test with HMDS_PTBR_FINAL_100_PUBLICA(1).nds
+- Game Code: ABCP
+- ScriptRecords: 1295
+- Pointer count: 1296
+- Indexed Character IDs: 175
+- Celia unique physical dialogue entries: 574
+- .ctsdialogue export/read: PASS
+- full-character .ctspack export/read: PASS
+- import replacement: PASS
+- ScriptS rebuild: PASS
+- generated ROM re-open: PASS
+- imported text persisted after rebuild: PASS
+
+Protected-row regression
+- One protected/incompatible entry no longer aborts a multi-entry import: PASS
+- Protected write is skipped and reported in TeamImportResult.skipped: PASS
+- Other compatible rows in the same batch continue importing: PASS
+
+Public API
+- cts.api.Workspace read/write without Tk UI: PASS
+- exchange formats exposed independently from UI: PASS
+
+Notes
+- Public game profile remains normal Harvest Moon DS PAL / ABCP.
+- HMDS Cute remains intentionally outside this release.
+- Windows EXE must be produced on Windows/MSVC or GitHub Actions; this Linux validation does not claim a native Windows binary was built here.

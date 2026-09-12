@@ -1,0 +1,66 @@
+name: Build Windows EXE
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Python 3.13 x64
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          architecture: 'x64'
+
+      - name: Install build dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade "Nuitka==4.2.1" ordered-set zstandard Pillow
+          python -c "import tkinter; import PIL; print('Tk/Pillow OK')"
+          python -m nuitka --version
+
+      - name: Compile HMDS Character Translation Studio
+        shell: pwsh
+        run: |
+          python -m nuitka `
+            --mode=onefile `
+            --msvc=latest `
+            --lto=no `
+            --assume-yes-for-downloads `
+            --remove-output `
+            --windows-console-mode=disable `
+            --enable-plugin=tk-inter `
+            --include-package=PIL `
+            --include-data-dir=cts/data=cts/data `
+            --windows-icon-from-ico=cts/data/app_icon.ico `
+            --company-name=Atm `
+            --product-name="HMDS Character Translation Studio" `
+            --file-description="Harvest Moon DS fan-translation utility" `
+            --file-version=0.10.0.0 `
+            --product-version=0.10.0.0 `
+            --copyright="Copyright 2026 Atm" `
+            --output-dir=dist `
+            --output-filename=HMDS_Character_Translation_Studio_v0.10.0.exe `
+            HMDS_Character_Translation_Studio.pyw
+
+      - name: Verify EXE exists
+        shell: pwsh
+        run: |
+          if (!(Test-Path "dist/HMDS_Character_Translation_Studio_v0.10.0.exe")) { throw "EXE was not generated." }
+          Get-Item "dist/HMDS_Character_Translation_Studio_v0.10.0.exe" | Format-List Name,Length,LastWriteTime
+
+      - name: Upload Windows EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: HMDS_Character_Translation_Studio_v0.10.0_Windows
+          path: dist/HMDS_Character_Translation_Studio_v0.10.0.exe
+          if-no-files-found: error
+          retention-days: 30

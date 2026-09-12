@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hmds-character-translation-studio"
+version = "0.10.0"
+description = "Translation and research tooling for Harvest Moon DS"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+authors = [{name = "Atm"}]
+dependencies = ["Pillow>=10.0"]
+license = {text = "Atm Non-Commercial Source License 1.0"}
+
+[project.scripts]
+hmds-cts = "cts.ui:main"
+
+[tool.setuptools]
+packages = ["cts"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+cts = ["data/**/*"]

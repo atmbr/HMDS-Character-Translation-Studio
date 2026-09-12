@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.ctsproj
+*.ctsexport
+*.nds
+*.sav
+*.dsv
+dist/
+*.build/
+*.dist/
+*.onefile-build/
+build/_cache/
+.vscode/
+.idea/
+
+*.ctsdialogue
+*.ctspack

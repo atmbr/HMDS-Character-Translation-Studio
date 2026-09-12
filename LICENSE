@@ -1,21 +1,38 @@
-MIT License
-
+Atm Non-Commercial Source License 1.0
 Copyright (c) 2026 Atm
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is granted, free of charge, to any person obtaining a copy of this
+software and its source code (the "Software") to:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+- use the Software for personal, educational, research, preservation, fan
+  translation, and other non-commercial purposes;
+- study, modify, fork, compile, and redistribute the Software;
+- create scripts, plugins, libraries, utilities, and other tools based on or
+  interoperating with the Software;
+- redistribute modified versions, provided they remain available without a
+  mandatory payment and preserve attribution to Atm and this license notice.
+
+Commercial sale is not permitted. You may not sell the Software, sell a
+modified version, require payment for access to it, sublicense it for a fee,
+or include it as a paid feature or paid bundle without prior written
+permission from Atm.
+
+Voluntary donations that are not required to obtain or use the Software are
+not considered a sale under this license.
+
+This license applies only to original source code and documentation created
+for HMDS Character Translation Studio. Harvest Moon DS, its characters,
+graphics, audio, fonts, names, and other game material belong to their
+respective rights holders. This license does not grant rights to third-party
+game assets.
+
+The name "HMDS Character Translation Studio" and the credit "Atm" may not be
+used to imply endorsement of a fork or derivative project. Forks should make
+clear that they are modified or independent versions.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
