@@ -174,6 +174,16 @@ cts/
 
 Se quiser estudar o funcionamento interno, comece por [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) e depois [docs/API.md](docs/API.md).
 
+## Estrutura da ROM
+
+Durante a tradução de **Harvest Moon DS**, fui registrando descobertas sobre textos, scripts, eventos, mapas, gráficos, saves, ARM9, offsets e outras estruturas internas do jogo.
+
+Esse material reúne caminhos, testes e interpretações encontradas durante a pesquisa. **Não significa que tudo seja a única forma correta de funcionar**, e algumas informações podem estar incompletas ou até incorretas.
+
+Ainda assim, pode servir como referência para tradutores, ROM hackers e desenvolvedores que queiram entender melhor a ROM e continuar a pesquisa.
+
+📖 **[Ver documentação da estrutura da ROM](docs/HMDS_ROM_HACKING_TECHNICAL_REFERENCE_PTBR.md)**
+
 ## Licença: pode estudar e criar em cima, mas não vender
 
 O código-fonte é disponibilizado para **uso pessoal, pesquisa, preservação, fan translation e criação de ferramentas não comerciais**.
