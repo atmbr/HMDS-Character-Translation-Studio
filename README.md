@@ -5,6 +5,7 @@ Uma ferramenta feita para quem quer **traduzir Harvest Moon DS sem precisar vive
 Ela nasceu durante a tradução PT-BR do jogo. Enquanto a tradução avançava, muita coisa que normalmente seria feita na mão acabou sendo mapeada: `ScriptS`, strings, ponteiros, controles, Face IDs, expressões, preview de diálogo e várias diferenças entre ROMs antigas. O Character Translation Studio junta esse conhecimento numa interface pensada para o tradutor.
 
 Use o projeto como uma ferramenta de apoio e referência, não como uma solução infalível. Sempre valide os resultados, teste as ROMs geradas e tenha em mente que ajustes adicionais podem ser necessários dependendo do seu projeto.
+
 O projeto foi desenvolvido com foco na versão espanhola de Harvest Moon DS, usada como principal referência para coletar, mapear e organizar as falas do jogo. Outras versões podem ter diferenças de estrutura e compatibilidade.
 
 **Criado por Atm**  
