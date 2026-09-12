@@ -1,4 +1,5 @@
 # HMDS Character Translation Studio
+<img width="80" height="80" alt="app_icon" src="https://github.com/user-attachments/assets/aa2e366e-8acd-40cb-bff0-1e35e8c49c1c" /> 
 
 Uma ferramenta feita para quem quer **traduzir Harvest Moon DS sem precisar viver no hexadecimal**.
 
